@@ -1,5 +1,6 @@
 package myfirstSeleniumProject;
 
+import myfirstSeleniumProject.utilities.TestBase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -10,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class day05_CheckBox {
+public class day05_CheckBox extends TestBase {
 
     //
 //    Create test method and complete the following task.
@@ -25,16 +26,16 @@ public class day05_CheckBox {
 
 
 
-    static WebDriver driver;
-    @BeforeAll
-    public static void setUp(){
-
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-
-    }
+//    static WebDriver driver;
+//    @BeforeAll
+//    public static void setUp(){
+//
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//
+//
+//    }
 
 
     @Test
